@@ -13,7 +13,8 @@
 
 - 好きな言語
 
-  - Ruby, Scheme
+  - Ruby
+  - Scheme
 
 - プログラミング以外の趣味
 
@@ -33,7 +34,8 @@
 
 - 好きな言語
 
-  - Scheme, Ruby
+  - Scheme
+  - Ruby
 
 - プログラミング以外の趣味
 
@@ -53,11 +55,13 @@
 
 - 好きな言語
 
-  - Scheme, Python, Javascript
+  - Scheme
+  - Python
+  - Javascript
 
 - プログラミング以外の趣味
 
-  - 散歩, お菓子
+  - 散歩, カフェ
 
 - SICP への意気込み
 
