@@ -19,6 +19,8 @@ Newton 法では数 a の平方根の値の予測値を x としたとき, x と
 
 :math:`y = x^2 - 2` を例に以下の手順を取る. (グラフを参照)
 
+.. image:: img/newton's_method.png
+
 .. math::
 
    - f(x) = x^2 - 2 とする
