@@ -1,4 +1,0 @@
-[submodule "html"]
-	path = html
-	url = git@github.com:sicp-reading/sicp-discussion.git
-	branch = gh-pages
