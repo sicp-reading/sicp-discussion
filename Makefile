@@ -151,3 +151,19 @@ doctest:
 	$(SPHINXBUILD) -b doctest $(ALLSPHINXOPTS) $(BUILDDIR)/doctest
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in $(BUILDDIR)/doctest/output.txt."
+
+
+# 
+# Makefile for build 
+#
+
+BASE_PYTHON = python2.7
+
+venv:
+	cd /tmp && curl -O http://python-distribute.org/distribute_setup.py
+	cd /tmp && sudo $(BASE_PYTHON) distribute_setup.py
+	sudo easy_install virtualenv
+
+env:
+	virtualenv -p $(BASE_PYTHON) --no-site-packages --clear --distribute venv
+	#source venv/bin/activate; pip install -r requirements.txt
