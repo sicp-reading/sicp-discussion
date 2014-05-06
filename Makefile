@@ -166,4 +166,4 @@ venv:
 
 env:
 	virtualenv -p $(BASE_PYTHON) --no-site-packages --clear --distribute venv
-	#source venv/bin/activate; pip install -r requirements.txt
+	source venv/bin/activate; pip install -r requirements.txt
