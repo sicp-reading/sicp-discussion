@@ -86,7 +86,9 @@ sum は引数として下限 a と上限 b を取り, 手続き term と next �
 
 例えば (a, b) 間の関数 f の定積分は数値的には式
 
-:math:`\int_{a}{b} f = \left\bigl[ f \left\bigl( a + \frac{dx}{2} \bigr) + f \left\bigl( a + dx + \frac{dx}{2} \bigr) + f \left\bigl( a + 2dx + \frac{dx}{2} \bigr) + ... \bigr] dx`
+.. math::
+
+   \int_{a}^{b} f = [ f ( a + \frac{dx}{2} \bigr) + f ( a + dx + \frac{dx}{2} \bigr) + f ( a + 2dx + \frac{dx}{2} \bigr) + ... \bigr] dx
 
 と表される. これを手続きとして表現できる.
 
