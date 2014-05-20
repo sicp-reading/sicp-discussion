@@ -89,7 +89,7 @@ sum は引数として下限 a と上限 b を取り, 手続き term と next �
 
 .. math::
 
-   \int_{a}^{b} f = \left[ f \left( a + \frac{dx}{2} \bigr) + f \left( a + dx + \frac{dx}{2} \bigr) + f \left( a + 2dx + \frac{dx}{2} \bigr) + ... \bigr] dx
+   \int_{a}^{b} f = \left[ f \left( a + \frac{dx}{2} \right) + f \left( a + dx + \frac{dx}{2} \right) + f \left( a + 2dx + \frac{dx}{2} \right) + ... \right] dx
 
 と表される. これを手続きとして表現できる.
 
