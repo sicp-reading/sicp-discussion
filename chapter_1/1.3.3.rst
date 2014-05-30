@@ -25,7 +25,7 @@
 
 図で示すように, このアルゴリズムのステップ数は,
 
-解となる n 回目において, :math:`\flac{L}{2^n} = T` が成り立つとすると, :math:`n = log \flac{L}{T}` となり, ステップ数は a と b の差である L と許容誤差 T に依存することが分かる.
+解となる n 回目において, :math:`\frac{L}{2^n} = T` が成り立つとすると, :math:`n = log \frac{L}{T}` となり, ステップ数は a と b の差である L と許容誤差 T に依存することが分かる.
 
 .. sourcecode:: scheme
     
@@ -75,9 +75,9 @@ fixed-point 手続きは, 引数に探索対象の関数 f と初期の予測値
 即ち,
 
 | :math:`y^2 = a`
-| :math:`y = \flac{a}{y}`
+| :math:`y = \frac{a}{y}`
 | このとき
-| y は :math:`y \mapsto \flac{a}{y}` の不動点を探索する, と言う.
+| y は :math:`y \mapsto \frac{a}{y}` の不動点を探索する, と言う.
 | 
 sqrt は以下のように定義でき, 手続きを追ってみる.
 
@@ -100,12 +100,12 @@ sqrt は以下のように定義でき, 手続きを追ってみる.
 不動点探索で収束を助ける有用な方法のひとつである. 
 
 | :math:`y^2 = a`
-| :math:`y = \flac{a}{y}`
-| :math:`y + y = \flac{a}{y} + y`
-| :math:`2y = \flac{a}{y} + y`
-| :math:`y = \flac{1}{2}(\flac{a}{y} + y)`
+| :math:`y = \frac{a}{y}` 
+| :math:`y + y = \frac{a}{y} + y`
+| :math:`2y = \frac{a}{y} + y`
+| :math:`y = \frac{1}{2}(\frac{a}{y} + y)`
 | 即ち
-| :math:`y \mapsto \flac{1}{2}(\flac{a}{y} + y)` 
+| :math:`y \mapsto \frac{1}{2}(\frac{a}{y} + y)` 
 | 
 
 .. sourcecode:: scheme
